@@ -15,9 +15,15 @@ make all test integration
 ```
 
 Copy the binaries to `/usr/local/bin` and `/usr/local/libexec` (requires entering an administrator password):
-
+Note: This would install the debug version of the application
 ```bash
 make install
+```
+In order to install the release version use below:
+````bash
+make clean
+make BUILD_CONFIGURATION=release all
+make BUILD_CONFIGURATION=release install
 ```
 
 ## Compile protobufs

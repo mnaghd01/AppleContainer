@@ -20,7 +20,8 @@ Note: This would install the debug version of the application
 make install
 ```
 In order to install the release version use below:
-````bash
+
+```bash
 make clean
 make BUILD_CONFIGURATION=release all
 make BUILD_CONFIGURATION=release install
@@ -44,9 +45,9 @@ to prepare your build environment.
 
 2. In your development shell, go to the `container` project directory.
 
-    ```
-    cd container
-    ```
+```bash
+ cd container
+```
 
 3. If the `container` services are already running, stop them.
 
